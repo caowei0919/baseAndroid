@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.guanaj.easyswipemenulibrary.EasySwipeMenuLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentView="@id/item_layout"
+    app:rightMenuView="@+id/btn_delete">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c_FFFFFF"
+            android:id="@+id/item_layout">
+            <RelativeLayout
+                android:id="@+id/relative_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/H30"
+                android:layout_marginLeft="@dimen/W24">
+
+                <CheckBox
+                    android:id="@+id/checkbox_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:clickable="false"
+                    android:padding="@dimen/W16"
+                    android:button="@mipmap/check_invalid">
+                </CheckBox>
+
+                <ImageView
+                    android:id="@+id/img_goodsPicture"
+                    android:layout_toRightOf="@id/checkbox_goods"
+                    android:layout_width="@dimen/W160"
+                    android:layout_height="@dimen/H160"
+                    android:layout_marginLeft="@dimen/W20"
+                    android:src="@mipmap/img_default">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/tv_goodsPicture"
+                    android:layout_toRightOf="@id/checkbox_goods"
+                    android:layout_width="@dimen/W160"
+                    android:layout_height="@dimen/H160"
+                    android:layout_marginLeft="@dimen/W20"
+                    android:background="@color/c_80333333"
+                    android:text="@string/picked_up"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/c_FFFFFF">
+                </TextView>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_goodsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/relative_left"
+                android:layout_alignTop="@id/relative_left"
+                android:layout_marginLeft="@dimen/W20"
+                android:layout_marginRight="@dimen/W24"
+                android:maxLines="2"
+                android:textSize="12sp"
+                android:textColor="@color/c_333333">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_goodsSku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_shop_car_good_sku"
+                android:layout_below="@id/tv_goodsName"
+                android:layout_alignLeft="@id/tv_goodsName"
+                android:layout_marginTop="@dimen/H10"
+                android:textSize="12sp"
+                android:paddingTop="@dimen/H8"
+                android:paddingBottom="@dimen/H8"
+                android:paddingLeft="@dimen/W14"
+                android:paddingRight="@dimen/W14"
+                android:textColor="@color/c_999999">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_goodsVipPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_goodsSku"
+                android:layout_alignLeft="@id/tv_goodsSku"
+                android:textSize="14sp"
+                android:textColor="@color/c_FF3333"
+                android:layout_marginTop="@dimen/H8">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/img_vipPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_goodsVipPrice"
+                android:layout_alignLeft="@id/tv_goodsVipPrice"
+                android:src="@mipmap/icon_vip_price">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_commonPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_goodsSku"
+                android:layout_toRightOf="@id/tv_goodsVipPrice"
+                android:textSize="12sp"
+                android:layout_marginLeft="@dimen/W8"
+                android:textColor="@color/c_666666"
+                android:layout_marginTop="@dimen/H8">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_remind"
+                android:visibility="gone"
+                android:layout_width="@dimen/W160"
+                android:layout_height="wrap_content"
+                android:text="@string/beyond_the_distribution_scope"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/c_FF3333"
+                android:layout_below="@id/relative_left"
+                android:layout_toLeftOf="@id/img_vipPrice"
+                android:layout_alignRight="@id/relative_left"
+                android:layout_marginTop="@dimen/H8">
+            </TextView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="@dimen/W180"
+            android:layout_height="match_parent"
+            android:background="@color/c_FF3333"
+            android:text="@string/address_delete"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+</com.guanaj.easyswipemenulibrary.EasySwipeMenuLayout>

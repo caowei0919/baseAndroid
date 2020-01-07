@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/c_F5F5F5"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zj.wz.wbyx.baseandroid.view.StatusBarHeightView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        app:use_type="use_padding_top"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H300"
+                android:background="@drawable/bg_shopcar_content">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H100">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/H100"
+                    android:layout_centerInParent="true"
+                    android:text="@string/tab_shop_car"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/c_FFFFFF">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/H100"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="@dimen/W50"
+                    android:paddingRight="@dimen/W50"
+                    android:text="@string/address_delete"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/c_FFFFFF">
+                </TextView>
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_shopCar"
+                android:layout_marginLeft="@dimen/W24"
+                android:layout_marginRight="@dimen/W24"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/H80"
+                android:layout_marginTop="@dimen/H150">
+            </android.support.v7.widget.RecyclerView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H80"
+                android:layout_alignParentBottom="true"
+                android:background="@color/c_F5F5F5">
+                <CheckBox
+                    android:id="@+id/checkbox_shopCar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/W20"
+                    android:text="@string/select_all"
+                    android:textColor="@color/c_666666"
+                    android:textSize="12sp"
+                    android:paddingLeft="@dimen/W24"
+                    android:button="@drawable/selector_default_address">
+                </CheckBox>
+
+                <TextView
+                    android:id="@+id/tv_settlement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/W24"
+                    android:textSize="12sp"
+                    android:textColor="@color/c_FFFFFF"
+                    android:gravity="center"
+                    android:background="@drawable/invite_sure"
+                    android:paddingTop="@dimen/H6"
+                    android:paddingBottom="@dimen/H6"
+                    android:paddingLeft="@dimen/W20"
+                    android:paddingRight="@dimen/W20">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_addUpTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/H8"
+                    android:text="@string/add_up_to"
+                    android:layout_toLeftOf="@id/tv_totalPrice"
+                    android:textSize="14sp"
+                    android:textColor="@color/c_333333">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_totalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/H8"
+                    android:layout_marginRight="@dimen/W35"
+                    android:layout_toLeftOf="@id/tv_settlement"
+                    android:textSize="14sp"
+                    android:textColor="@color/c_FF3333">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_serviceRemind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_addUpTo"
+                    android:layout_alignLeft="@id/tv_addUpTo"
+                    android:text="@string/not_include_service"
+                    android:layout_marginBottom="@dimen/H8"
+                    android:textSize="10sp"
+                    android:textColor="@color/c_999999">
+                </TextView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.zj.wz.wbyx.baseandroid.view.StatusBarHeightView>
+
+</LinearLayout>

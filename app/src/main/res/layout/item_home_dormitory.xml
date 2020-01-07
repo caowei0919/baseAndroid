@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/H16"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/img_goodsPicture"
+        android:layout_width="@dimen/W100"
+        android:layout_height="@dimen/H100"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_vipPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_goodsPicture"
+        android:layout_centerHorizontal="true"
+        android:textSize="10sp"
+        android:textColor="@color/c_FF2525"
+        android:layout_marginTop="@dimen/H8">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_nomPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_vipPrice"
+        android:layout_centerHorizontal="true"
+        android:textSize="10sp"
+        android:textColor="@color/c_8F949C"
+        android:layout_marginTop="@dimen/H8">
+    </TextView>
+</RelativeLayout>

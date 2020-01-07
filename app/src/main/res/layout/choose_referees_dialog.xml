@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/H250"
+    android:background="@drawable/invite_sure_bg"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/make_sure_selecte_that"
+        android:textSize="16sp"
+        android:textColor="@color/c_333333"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/H64">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:layout_alignTop="@id/lin_select"
+        android:background="@color/c_EBEBEB">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/lin_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="@dimen/W1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/H24"
+            android:text="@string/look_again"
+            android:gravity="center"
+            android:textColor="@color/c_DB2F2F"
+            android:textSize="16sp"
+            android:layout_marginBottom="@dimen/H24"
+            android:layout_marginLeft="@dimen/W50"
+            android:layout_marginRight="@dimen/W50"
+            android:layout_weight="1">
+        </TextView>
+
+        <TextView
+            android:layout_width="@dimen/W2"
+            android:layout_height="match_parent"
+            android:background="@color/c_EBEBEB">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="@dimen/W1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/H24"
+            android:text="@string/sure"
+            android:gravity="center"
+            android:textColor="@color/c_DB2F2F"
+            android:textSize="16sp"
+            android:layout_marginBottom="@dimen/H24"
+            android:layout_marginLeft="@dimen/W50"
+            android:layout_marginRight="@dimen/W50"
+            android:layout_weight="1">
+        </TextView>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/H22"
+    android:background="@color/c_FFFFFF"
+    android:padding="@dimen/H4"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img_member_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ImageView>
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/img_member_share">
+    </Button>
+</RelativeLayout>

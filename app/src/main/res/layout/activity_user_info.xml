@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c_F5F5F5">
+
+    <include layout="@layout/title"/>
+
+    <include layout="@layout/user_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/lin_nick"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H84"
+        android:layout_marginTop="@dimen/H20"
+        android:background="@color/c_FFFFFF"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/nick_name"
+            android:textSize="14sp"
+            android:textColor="@color/c_333333"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/W24">
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_nick"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/please_to_input_your_nick"
+            android:textSize="14sp"
+            android:layout_marginRight="@dimen/W24"
+            android:textColor="@color/c_666666"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:background="@null">
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:background="@color/c_EEEEEE">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H84"
+        android:background="@color/c_FFFFFF"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/gender"
+            android:textSize="14sp"
+            android:textColor="@color/c_333333"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/W24">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:drawableRight="@mipmap/icon_right"
+            android:drawablePadding="@dimen/W16"
+            android:layout_marginRight="@dimen/W24"
+            android:textColor="@color/c_666666"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:background="@null">
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:background="@color/c_EEEEEE">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H84"
+        android:background="@color/c_FFFFFF"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/birthday"
+            android:textSize="14sp"
+            android:textColor="@color/c_333333"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/W24">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_birthday"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:drawableRight="@mipmap/icon_right"
+            android:drawablePadding="@dimen/W16"
+            android:layout_marginRight="@dimen/W24"
+            android:textColor="@color/c_666666"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:background="@null">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H84"
+        android:layout_marginTop="@dimen/H20"
+        android:background="@color/c_FFFFFF"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/invite_man"
+            android:textSize="14sp"
+            android:textColor="@color/c_333333"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/W24">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_invite"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:drawableRight="@mipmap/icon_right"
+            android:drawablePadding="@dimen/W16"
+            android:layout_marginRight="@dimen/W24"
+            android:textColor="@color/c_666666"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:background="@null">
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:background="@color/c_EEEEEE">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H84"
+        android:background="@color/c_FFFFFF"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/wechat_num"
+            android:textSize="14sp"
+            android:textColor="@color/c_333333"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/W24">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_wechatNum"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:layout_marginRight="@dimen/W24"
+            android:textColor="@color/c_666666"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:background="@null">
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:background="@color/c_EEEEEE">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H84"
+        android:background="@color/c_FFFFFF"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/phone_num"
+            android:textSize="14sp"
+            android:textColor="@color/c_333333"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/W24">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:layout_marginRight="@dimen/W24"
+            android:textColor="@color/c_666666"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:background="@null">
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

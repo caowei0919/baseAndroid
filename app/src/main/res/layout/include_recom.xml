@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/shape_item_referees"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/relative_dormitory"
+        android:layout_width="@dimen/W1"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_dormitoryShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dormitory_shop"
+            android:textSize="16sp"
+            android:layout_marginLeft="@dimen/W20"
+            android:layout_marginTop="@dimen/H20"
+            android:textColor="@color/c_1B1B1B">
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_seventy_percent_cap"
+            android:layout_toRightOf="@id/tv_dormitoryShop"
+            android:layout_marginLeft="@dimen/W12"
+            android:layout_marginTop="@dimen/H28">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_snacksDrinksWater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_snacks_drinks_water"
+            android:layout_alignLeft="@id/tv_dormitoryShop"
+            android:layout_marginTop="@dimen/H6"
+            android:layout_below="@id/tv_dormitoryShop">
+        </ImageView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_homeDormitory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/W12"
+            android:layout_marginRight="@dimen/W12"
+            android:layout_marginTop="@dimen/H16"
+            android:layout_below="@id/img_snacksDrinksWater">
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="@dimen/W1"
+        android:background="@color/c_EBEBEB"
+        android:layout_height="match_parent">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="@dimen/W1"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative_market"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/H1"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_supermarket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/around_the_supermarket"
+                android:textSize="16sp"
+                android:layout_marginLeft="@dimen/W20"
+                android:layout_marginTop="@dimen/H20"
+                android:textColor="@color/c_1B1B1B">
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_ultra_cost_effective"
+                android:layout_toRightOf="@id/tv_supermarket"
+                android:layout_marginLeft="@dimen/W12"
+                android:layout_marginTop="@dimen/H28">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/img_provisions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_daily_provisions"
+                android:layout_alignLeft="@id/tv_supermarket"
+                android:layout_marginTop="@dimen/H6"
+                android:layout_below="@id/tv_supermarket">
+            </ImageView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_homeMarket"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/W12"
+                android:layout_marginRight="@dimen/W12"
+                android:layout_marginTop="@dimen/H16"
+                android:layout_below="@id/img_provisions">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/H1"
+            android:background="@color/c_EBEBEB">
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/relative_recommended"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/H1"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_recommended"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nest_side_recommended"
+                android:textSize="16sp"
+                android:layout_marginLeft="@dimen/W20"
+                android:layout_marginTop="@dimen/H20"
+                android:textColor="@color/c_1B1B1B">
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_good_quality_item"
+                android:layout_toRightOf="@id/tv_recommended"
+                android:layout_marginLeft="@dimen/W12"
+                android:layout_marginTop="@dimen/H28">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/img_recommended"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_brand_recommendation"
+                android:layout_alignLeft="@id/tv_recommended"
+                android:layout_marginTop="@dimen/H6"
+                android:layout_below="@id/tv_recommended">
+            </ImageView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/W12"
+                android:layout_marginRight="@dimen/W12"
+                android:layout_marginTop="@dimen/H16"
+                android:layout_below="@id/img_recommended">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

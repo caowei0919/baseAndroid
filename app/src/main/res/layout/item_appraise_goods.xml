@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img_goodsPicture"
+        android:layout_width="@dimen/W120"
+        android:layout_height="@dimen/H120"
+        android:layout_marginTop="@dimen/H20"
+        android:layout_marginLeft="@dimen/W24"
+        android:src="@mipmap/img_default">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/W400"
+        android:layout_toRightOf="@id/img_goodsPicture"
+        android:layout_marginLeft="@dimen/W36"
+        android:layout_alignTop="@id/img_goodsPicture"
+        android:textSize="12sp"
+        android:textColor="@color/c_333333">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_sku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_alignLeft="@id/tv_name"
+        android:layout_marginTop="@dimen/H8"
+        android:textSize="12sp"
+        android:textColor="@color/c_999999"
+        android:maxWidth="@dimen/W400">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/img_goodsPicture"
+        android:layout_below="@id/img_goodsPicture"
+        android:layout_marginTop="@dimen/H24"
+        android:text="@string/description_is_consistent"
+        android:textSize="14sp"
+        android:textColor="@color/c_333333">
+    </TextView>
+
+    <com.zj.wz.wbyx.baseandroid.view.RatingBar
+        android:id="@+id/ratingBar_good"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/H4"
+        android:layout_alignTop="@id/tv_descriptionText"
+        android:layout_toRightOf="@id/tv_descriptionText"
+        app:starDistance="@dimen/W2"
+        app:starEmptyRes="@mipmap/ic_app_comm_star_nor"
+        app:starIsFull="false"
+        android:layout_marginLeft="@dimen/W36"
+        app:starSelectedRes="@mipmap/ic_app_comm_star_sel">
+    </com.zj.wz.wbyx.baseandroid.view.RatingBar>
+
+    <EditText
+        android:id="@+id/ed_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H160"
+        android:padding="@dimen/W24"
+        android:layout_marginLeft="@dimen/W28"
+        android:background="@drawable/shape_search"
+        android:layout_below="@id/tv_descriptionText"
+        android:maxLength="200"
+        android:lineSpacingExtra="@dimen/H20"
+        android:textColorHint="@color/c_666666"
+        android:textSize="10sp"
+        android:textColor="@color/c_333333"
+        android:layout_marginTop="@dimen/H24"
+        android:layout_marginBottom="@dimen/H24"
+        android:layout_marginRight="@dimen/W28"
+        android:hint="@string/share_good_to_your_friends"
+        android:gravity="start">
+    </EditText>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_loadImg"
+        android:layout_below="@id/ed_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/H40"
+        android:layout_marginRight="@dimen/W24">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_picture_at_once_lessthan_five"
+        android:textSize="14sp"
+        android:layout_below="@id/recycle_loadImg"
+        android:textColor="@color/c_999999"
+        android:layout_marginLeft="@dimen/W24"
+        android:layout_marginTop="@dimen/H20">
+    </TextView>
+
+</RelativeLayout>

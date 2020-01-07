@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/title"
+        android:id="@+id/layout_title"/>
+
+    <com.enlogy.statusview.StatusRelativeLayout
+        android:id="@+id/status_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H1"
+        android:layout_weight="1"
+        android:background="@color/c_FFFFFF"
+        app:rEmptyView="@layout/empty_address"
+        app:rContentView="@layout/content_address">
+    </com.enlogy.statusview.StatusRelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H100"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_addNotDormitory"
+            android:layout_width="@dimen/W1"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/add_not_dormitory"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/c_FFFFFF"
+            android:background="@drawable/add_not_dormitory_bg">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_addDormitory"
+            android:layout_width="@dimen/W1"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/add_dormitory"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/c_FFFFFF"
+            android:background="@drawable/add_dormitory_bg">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

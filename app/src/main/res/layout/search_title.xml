@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/H90">
+
+    <TextView
+        android:id="@+id/tv_tltle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableLeft="@mipmap/img_back"
+        android:paddingLeft="@dimen/W20"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:textColor="@color/c_333333"
+        android:drawablePadding="@dimen/W40"
+        android:paddingRight="@dimen/W20">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/img_service"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/icon_service_red"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="@dimen/W12"
+        android:paddingRight="@dimen/W12">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/H14"
+        android:paddingBottom="@dimen/H14"
+        android:minWidth="@dimen/W300"
+        android:maxWidth="@dimen/W550"
+        android:paddingLeft="@dimen/W60"
+        android:paddingRight="@dimen/W60"
+        android:drawableLeft="@mipmap/icon_search_red"
+        android:drawablePadding="@dimen/W12"
+        android:layout_marginRight="@dimen/W12"
+        android:background="@drawable/shape_market_search"
+        android:text="@string/fresh_fruit"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/img_service">
+    </TextView>
+
+</RelativeLayout>

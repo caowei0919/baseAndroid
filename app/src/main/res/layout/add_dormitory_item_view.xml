@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dorm_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/H30"
+        android:layout_marginLeft="@dimen/W10"
+        android:layout_marginRight="@dimen/W10"
+        android:background="@drawable/add_dormitory_item_bg_selector"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:paddingLeft="@dimen/W50"
+        android:paddingTop="@dimen/H8"
+        android:paddingRight="@dimen/W50"
+        android:paddingBottom="@dimen/H8"
+        android:textColor="@color/c_666666"
+        android:textSize="13sp" />
+
+</RelativeLayout>
+

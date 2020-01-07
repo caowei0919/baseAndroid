@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--无宿舍地址-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zj.wz.wbyx.baseandroid.view.StatusBarHeightView
+        android:id="@+id/status_height"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        app:use_type="use_padding_top"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/c_F6F7F9">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H100"
+                android:background="@color/c_FFFFFF">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/H100"
+                android:text="@string/please_to_select_addr"
+                android:gravity="center"
+                android:singleLine="true"
+                android:maxWidth="@dimen/W300"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="@dimen/W30"
+                android:drawableLeft="@mipmap/icon_address_black"
+                android:drawableRight="@mipmap/img_drop_down_black"
+                android:textColor="@color/c_1B1B1B"
+                android:textSize="16sp">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/H100"
+                android:src="@mipmap/img_back"
+                android:paddingLeft="@dimen/W40"
+                android:paddingRight="@dimen/W40"
+                android:layout_alignParentLeft="true">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/img_addr"
+                android:layout_width="@dimen/W460"
+                android:layout_height="@dimen/H420"
+                android:src="@mipmap/icon_no_dormitory_addr"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/H300">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/img_addr"
+                android:layout_marginTop="@dimen/H16"
+                android:textSize="14sp"
+                android:textColor="@color/c_8F949C"
+                android:text="@string/now_not_has_dormitory_addr_and_to_build">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_goBuild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/H40"
+                android:textSize="16sp"
+                android:textColor="@color/c_FFFFFF"
+                android:text="@string/to_build"
+                android:background="@drawable/invite_sure"
+                android:paddingTop="@dimen/H8"
+                android:paddingBottom="@dimen/H8"
+                android:paddingRight="@dimen/W52"
+                android:paddingLeft="@dimen/W52">
+            </TextView>
+        </RelativeLayout>
+    </com.zj.wz.wbyx.baseandroid.view.StatusBarHeightView>
+
+</RelativeLayout>

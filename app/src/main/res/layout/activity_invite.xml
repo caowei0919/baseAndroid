@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c_F5F5F5">
+
+    <include layout="@layout/title"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/H120"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/img_login_bar">
+    </ImageView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/H180"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/invite_center">
+    </ImageView>
+
+    <EditText
+        android:id="@+id/et_inviteCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:layout_marginTop="@dimen/H40"
+        android:layout_marginRight="@dimen/W100"
+        android:layout_marginLeft="@dimen/W100"
+        android:hint="@string/please_input_invite_code"
+        android:paddingLeft="@dimen/W40"
+        android:paddingTop="@dimen/H20"
+        android:paddingBottom="@dimen/H20"
+        android:gravity="center_vertical"
+        android:background="@drawable/edit_invite_code_bg">
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/H20"
+        android:text="@string/only_bind_one_dont_change"
+        android:textSize="10sp"
+        android:textColor="@color/c_1B1B1B">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H1"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_bind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/bt_bind">
+        </Button>
+    </RelativeLayout>
+</LinearLayout>

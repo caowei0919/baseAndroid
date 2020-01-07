@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/H632"
+    android:background="@mipmap/check_version_bg"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:layout_alignTop="@id/lin_select"
+        android:background="@color/c_EBEBEB">
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/update_now"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/H24"
+        android:layout_above="@id/tv_cancel">
+    </Button>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/later_check"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="12sp"
+        android:layout_marginBottom="@dimen/H20"
+        android:textColor="@color/c_999999">
+    </TextView>
+</RelativeLayout>

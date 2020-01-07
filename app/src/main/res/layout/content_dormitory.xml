@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zj.wz.wbyx.baseandroid.view.StickyScrollView
+        android:id="@+id/stick_dormitory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="1200dp"
+        android:fillViewport="true"
+        android:background="@color/c_F5F6F8"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <com.zhouwei.mzbanner.MZBannerView
+                android:id="@+id/mzbanner_dormitory"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H340"
+                app:open_mz_mode="true"
+                app:canLoop="true"
+                app:indicatorAlign="center"
+                app:indicatorPaddingLeft="@dimen/W20">
+            </com.zhouwei.mzbanner.MZBannerView>
+
+            <include layout="@layout/item_shop_info"
+                android:layout_marginTop="@dimen/H260"
+                android:layout_width="match_parent"
+                android:id="@+id/layout_shopInfo"
+                android:layout_marginLeft="@dimen/W20"
+                android:layout_marginRight="@dimen/W20"
+                android:layout_height="@dimen/H160"/>
+
+            <TextView
+                android:id="@+id/tv_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H20"
+                android:layout_below="@id/layout_shopInfo"
+                android:background="@color/c_F5F6F8">
+            </TextView>
+
+            <net.lucode.hackware.magicindicator.MagicIndicator
+                android:id="@+id/magic_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H80"
+                android:layout_below="@id/tv_line"
+                android:background="@color/c_FFFFFF"></net.lucode.hackware.magicindicator.MagicIndicator>
+
+            <TextView
+                android:id="@+id/layout_titleViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H2"
+                android:layout_below="@id/magic_indicator"
+                android:background="@color/c_EBEBEB">
+            </TextView>
+
+            <com.zj.wz.wbyx.baseandroid.view.WrapContentHeightViewPager
+                android:id="@+id/viewpager_dormitory"
+                android:layout_below="@id/layout_titleViewPager"
+                android:layout_marginBottom="@dimen/H128"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </com.zj.wz.wbyx.baseandroid.view.WrapContentHeightViewPager>
+        </RelativeLayout>
+    </com.zj.wz.wbyx.baseandroid.view.StickyScrollView>
+
+    <com.zj.wz.wbyx.baseandroid.view.StatusBarHeightView
+        android:id="@+id/status_height"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        app:use_type="use_padding_top"
+        android:orientation="vertical" >
+
+        <include layout="@layout/dormitor_toolbar"
+                android:id="@+id/layout_title"/>
+
+        <net.lucode.hackware.magicindicator.MagicIndicator
+                android:id="@+id/magic_indicatorTop"
+                android:layout_width="match_parent"
+                android:background="@color/c_FFFFFF"
+                android:visibility="invisible"
+                android:layout_height="@dimen/H80"
+                android:layout_below="@id/layout_title">
+        </net.lucode.hackware.magicindicator.MagicIndicator>
+    </com.zj.wz.wbyx.baseandroid.view.StatusBarHeightView>
+
+    <include layout="@layout/dormitory_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H128"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

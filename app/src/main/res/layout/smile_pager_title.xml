@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/W240"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/c_1B1B1B">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_subTitle"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="@dimen/H8"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/c_8F949C">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/img_smile"
+        android:layout_width="@dimen/W40"
+        android:layout_height="@dimen/H25"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_subTitle"
+        android:layout_marginTop="@dimen/H8">
+    </ImageView>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/shape_item_referees"
+    android:layout_height="@dimen/H580"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_subject"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H240"
+        android:scaleType="fitXY">
+    </ImageView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_subjectsGoods"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H340">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

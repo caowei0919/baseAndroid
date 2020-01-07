@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/H64">
+
+    <TextView
+        android:id="@+id/tv_vipText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/become_vip_and_share_vip_price"
+        android:textSize="12sp"
+        android:textColor="@color/c_333333"
+        android:gravity="center_vertical"
+        android:drawableLeft="@mipmap/icon_buy_vip"
+        android:paddingLeft="@dimen/W24"
+        android:drawablePadding="@dimen/W20"
+        android:background="@color/c_F8E8CA">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_toBecomeVip"
+        android:layout_width="@dimen/W140"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:text="@string/immediately_opened"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:background="@color/c_F3D5A7"
+        android:textColor="@color/c_333333">
+    </TextView>
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_FFFFFF">
+    <include layout="@layout/search_title"
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H90"/>
+
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:layout_below="@id/layout_title"
+        android:background="@color/c_EBEBEB">
+    </TextView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_leftCategories"
+        android:layout_width="@dimen/W160"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_line">
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/img_toBottom"
+        android:layout_width="@dimen/W80"
+        android:layout_height="@dimen/H100"
+        android:src="@mipmap/icon_categories_bottom"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/layout_title">
+    </ImageView>
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/magic_kindOfMenu"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@id/img_toBottom"
+        android:layout_height="@dimen/H100"
+        android:layout_below="@id/tv_line"
+        android:layout_marginLeft="@dimen/W20"
+        android:layout_toRightOf="@id/recycle_leftCategories">
+    </net.lucode.hackware.magicindicator.MagicIndicator>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_goods"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/recycle_leftCategories"
+        android:layout_below="@id/magic_kindOfMenu"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/W12">
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/img_goShop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_center_shopcar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/H150"
+        android:layout_marginRight="@dimen/W20">
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/relative_magicIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone"
+        android:layout_toRightOf="@id/recycle_leftCategories"
+        android:layout_below="@id/layout_title"
+        android:background="@color/c_80C0C0C0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c_FFFFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/H100"
+                android:text="@string/all_categories"
+                android:paddingLeft="@dimen/W20"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:textColor="@color/c_8F949C">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/img_toTop"
+                android:layout_width="@dimen/W80"
+                android:layout_height="@dimen/H100"
+                android:src="@mipmap/icon_categories_top"
+                android:layout_alignParentRight="true">
+            </ImageView>
+
+            <com.zj.wz.wbyx.baseandroid.view.FlowLayout
+                android:id="@+id/flow_categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_toTop"
+                android:layout_marginBottom="@dimen/H14">
+            </com.zj.wz.wbyx.baseandroid.view.FlowLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

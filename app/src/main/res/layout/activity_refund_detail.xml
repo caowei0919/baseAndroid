@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title"/>
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_shopName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/W24"
+                    android:textColor="@color/c_333333"
+                    android:layout_marginTop="@dimen/H24"
+                    android:layout_marginBottom="@dimen/H24"
+                    android:textSize="14sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_creatTime"
+                    android:layout_marginLeft="@dimen/W20"
+                    android:layout_toRightOf="@id/tv_shopName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/c_333333"
+                    android:layout_marginTop="@dimen/H24"
+                    android:layout_marginBottom="@dimen/H24"
+                    android:textSize="14sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_chooseAll"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_all"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/H10"
+                    android:textColor="@color/c_FF3333"
+                    android:textSize="14sp">
+                </TextView>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H2"
+                android:background="@color/c_F6F6F6"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recy_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/return_the_freight"
+                    android:layout_marginLeft="@dimen/W24"
+                    android:textColor="@color/c_333333"
+                    android:layout_marginTop="@dimen/H24"
+                    android:layout_marginBottom="@dimen/H24"
+                    android:textSize="14sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_yunfei"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/W24"
+                    android:layout_marginLeft="@dimen/W20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/W10"
+                    android:textColor="@color/c_FF3333"
+                    android:textSize="14sp">
+                </TextView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/refund_the_service_fee"
+                    android:layout_marginLeft="@dimen/W24"
+                    android:textColor="#333333"
+                    android:layout_marginTop="@dimen/H24"
+                    android:layout_marginBottom="@dimen/H24"
+                    android:textSize="14sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_fuwufei"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/W24"
+                    android:layout_marginLeft="@dimen/W20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/W10"
+                    android:textColor="@color/c_FF3333"
+                    android:textSize="14sp">
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/the_total_amount_of_refund"
+                    android:layout_marginLeft="@dimen/W24"
+                    android:textColor="@color/c_333333"
+                    android:layout_marginTop="@dimen/H24"
+                    android:layout_marginBottom="@dimen/H24"
+                    android:textSize="14sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_total"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/W24"
+                    android:layout_marginLeft="@dimen/W20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/W10"
+                    android:textColor="@color/c_FF3333"
+                    android:textSize="14sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_changeTotal"
+                    android:layout_marginRight="@dimen/W24"
+                    android:layout_marginLeft="@dimen/W20"
+                    android:layout_toLeftOf="@id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/modify_refund_amount"
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/W10"
+                    android:textColor="@color/c_FF3333"
+                    android:textSize="14sp">
+                </TextView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/H20"
+            android:background="@color/c_F6F6F6">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/refund_reasons_selected"
+            android:layout_marginTop="@dimen/H24"
+            android:layout_marginLeft="@dimen/W24"
+            android:layout_marginBottom="@dimen/H24">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/H2"
+            android:background="@color/c_F6F6F6"
+            android:layout_marginLeft="@dimen/W24"
+            android:layout_marginRight="@dimen/W24">
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recy_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmed_return"
+            android:enabled="false"
+            android:textColor="@color/c_FFFFFF"
+            android:background="@drawable/selector_buy"
+            android:layout_marginLeft="@dimen/W96"
+            android:layout_marginRight="@dimen/W96"
+            android:layout_marginTop="@dimen/H60">
+        </Button>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

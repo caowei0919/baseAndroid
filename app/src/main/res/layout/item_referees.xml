@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/W50"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_item_referees"
+    android:layout_marginRight="@dimen/W50">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_avatar"
+        android:layout_width="@dimen/W100"
+        android:layout_height="@dimen/H100"
+        android:src="@mipmap/img_default"
+        android:layout_marginTop="@dimen/H34"
+        android:layout_marginBottom="@dimen/H34"
+        android:layout_marginLeft="@dimen/W32">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/tv_nickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/circle_avatar"
+        android:layout_alignTop="@id/circle_avatar"
+        android:layout_marginLeft="@dimen/W30"
+        android:textColor="@color/c_333333"
+        android:textSize="16sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/W250"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_toRightOf="@id/circle_avatar"
+        android:layout_alignBottom="@id/circle_avatar"
+        android:layout_marginLeft="@dimen/W30"
+        android:textColor="@color/c_999999"
+        android:textSize="14sp">
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_become"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/W24"
+        android:background="@mipmap/item_tobe_referees"
+        android:text="@string/become_referees"
+        android:textColor="@color/c_FFFFFF"
+        android:textSize="12sp"
+        android:gravity="center">
+    </Button>
+</RelativeLayout>

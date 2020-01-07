@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatingBar">
+        <!--未选中-->
+        <attr name="starEmptyRes" format="reference" />
+        <!--选中半个-->
+        <attr name="starHalfRes" format="reference" />
+        <!--选中全部-->
+        <attr name="starSelectedRes" format="reference" />
+        <!--星星的总数-->
+        <attr name="startTotalNumber" format="integer" />
+        <!--默认选中的数量 -->
+        <attr name="selectedNumber" format="float" />
+        <!--星星的间距-->
+        <attr name="starDistance" format="dimension" />
+        <!--星星的宽度-->
+        <attr name="starWidth" format="dimension" />
+        <!--星星的高度-->
+        <attr name="starHeight" format="dimension" />
+        <!--是不是只画整个星星，不画半个-->
+        <attr name="starIsFull" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="AmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension"/>
+        <attr name="btnTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="flow_fold" format="boolean" />
+        <attr name="flow_foldLines" format="integer" />
+        <attr name="flow_equally" format="boolean" />
+        <attr name="flow_horizontalSpacing" format="dimension" />
+        <attr name="flow_verticalSpacing" format="dimension" />
+        <attr name="flow_isSingle" format="boolean" />
+        <attr name="flow_cancelSelf" format="boolean" />
+        <attr name="flow_maxSelectNum" format="integer" />
+        <attr name="flow_paddingLeft" format="dimension" />
+        <attr name="flow_paddingRight" format="dimension" />
+        <attr name="flow_paddingTop" format="dimension" />
+        <attr name="flow_paddingBottom" format="dimension" />
+        <attr name="flow_background" format="reference" />
+        <attr name="flow_textColor" format="color" />
+        <attr name="flow_textSize" format="dimension" />
+        <attr name="flow_type" format="dimension">
+            <enum name="onOptionSelect" value="0" />
+            <enum name="tag" value="1" />
+        </attr>
+        <attr name="flow_gravity">
+            <enum name="LEFT" value="0"></enum>
+            <enum name="RIGHT" value="1"></enum>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="FlowCheckBox">
+        <attr name="drawableHeight" format="dimension" />
+        <attr name="drawableWidth" format="dimension" />
+        <attr name="drawableTop" format="reference" />
+        <attr name="drawableLeft" format="reference" />
+        <attr name="drawableRight" format="reference" />
+        <attr name="drawableBottom" format="reference" />
+    </declare-styleable>
+
+    <!--从中心点缩放弹框-->
+    <style name="CommonDialog" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@style/CommonDialog.AnimationStyle</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="CommonDialog.AnimationStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/ui_dialog_in_from_center</item>
+        <item name="android:windowExitAnimation">@anim/ui_dialog_out_to_center</item>
+    </style>
+</resources>

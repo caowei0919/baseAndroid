@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title"
+        android:id="@+id/layout_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H1"
+        android:layout_weight="1"
+        android:background="@color/c_F5F5F5"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_write"
+                android:layout_below="@id/layout_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H370"
+                android:layout_marginLeft="@dimen/W24"
+                android:layout_marginTop="@dimen/H20"
+                android:layout_marginRight="@dimen/W24"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_loadImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/H40"
+                android:layout_marginRight="@dimen/W24">
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload_picture_at_once_lessthan_five"
+                android:textSize="14sp"
+                android:textColor="@color/c_999999"
+                android:layout_marginLeft="@dimen/W24"
+                android:layout_marginTop="@dimen/H20">
+            </TextView>
+
+            <Button
+                android:id="@+id/btn_commit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/W24"
+                android:layout_marginRight="@dimen/W24"
+                android:text="@string/submit"
+                android:textColor="@color/c_FFFFFF"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/H24"
+                android:background="@drawable/enable_login">
+            </Button>
+
+            <TextView
+                android:id="@+id/tv_cellPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_location"
+                android:layout_marginTop="@dimen/H32"
+                android:layout_marginLeft="@dimen/W24"
+                android:layout_marginRight="@dimen/W24"
+                android:gravity="center"
+                android:paddingTop="@dimen/H16"
+                android:paddingBottom="@dimen/H16">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/common_problems"
+                android:layout_marginLeft="@dimen/W24"
+                android:layout_marginRight="@dimen/W24"
+                android:paddingLeft="@dimen/W24"
+                android:paddingTop="@dimen/H24"
+                android:paddingBottom="@dimen/H24"
+                android:textSize="16sp"
+                android:textColor="@color/c_333333"
+                android:background="@drawable/shape_location"
+                android:layout_marginTop="@dimen/H20">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H2"
+                android:background="@color/c_EEEEEE"
+                android:layout_marginLeft="@dimen/W24"
+                android:layout_marginRight="@dimen/W24">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_problem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/W24"
+                    android:layout_marginRight="@dimen/W24"
+                    android:background="@drawable/shape_location">
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/H56"
+                android:layout_marginBottom="@dimen/H56">
+
+                <TextView
+                    android:id="@+id/tv_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End"
+                    android:textSize="12sp"
+                    android:textColor="@color/c_999999"
+                    android:layout_centerInParent="true">
+                </TextView>
+
+                <TextView
+                    android:layout_toLeftOf="@id/tv_end"
+                    android:layout_width="@dimen/W80"
+                    android:layout_marginRight="@dimen/W32"
+                    android:layout_centerVertical="true"
+                    android:layout_height="@dimen/H2"
+                    android:background="@color/c_979797"
+                    android:layout_centerInParent="true">
+                </TextView>
+
+                <TextView
+                    android:layout_toRightOf="@id/tv_end"
+                    android:layout_width="@dimen/W80"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/W32"
+                    android:layout_height="@dimen/H2"
+                    android:background="@color/c_979797"
+                    android:layout_centerInParent="true">
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

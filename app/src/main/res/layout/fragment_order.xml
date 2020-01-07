@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/H20"
+            android:background="@color/c_F5F5F5">
+        </TextView>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/smart_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/H1"
+            android:layout_weight="1"
+            android:background="@color/c_FFFFFF">
+
+                <com.enlogy.statusview.StatusRelativeLayout
+                    android:id="@+id/status_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:rEmptyView="@layout/empty_order"
+                    app:rContentView="@layout/content_order">
+                </com.enlogy.statusview.StatusRelativeLayout>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

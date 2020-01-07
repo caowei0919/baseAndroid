@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/shape_location"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_all"
+        android:padding="@dimen/W10"
+        android:layout_marginLeft="@dimen/W28"
+        android:layout_marginBottom="@dimen/H24"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/500"
+        android:padding="@dimen/W10"
+        android:layout_marginRight="@dimen/W28"
+        android:layout_marginBottom="@dimen/H24"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+    </TextView>
+
+    <EditText
+        android:id="@+id/ed_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_size"
+        android:layout_marginLeft="@dimen/W28"
+        android:background="@null"
+        android:maxLength="500"
+        android:lineSpacingExtra="@dimen/H20"
+        android:textColorHint="@color/c_999999"
+        android:textSize="14sp"
+        android:textColor="@color/c_333333"
+        android:layout_marginTop="@dimen/H24"
+        android:layout_marginBottom="@dimen/H24"
+        android:layout_marginRight="@dimen/W28"
+        android:hint="@string/please_to_input_feedback"
+        android:gravity="start">
+    </EditText>
+</RelativeLayout>

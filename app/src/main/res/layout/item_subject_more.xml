@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_more"
+    android:layout_width="@dimen/W110"
+    android:background="@color/c_FFFFFF"
+    android:layout_height="@dimen/H340">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:ems="1"
+        android:layout_centerInParent="true"
+        android:textSize="12sp"
+        android:textColor="@color/c_8F949C"
+        android:text="@string/check_more"
+        android:lineSpacingMultiplier="1.5">
+    </TextView>
+</RelativeLayout>

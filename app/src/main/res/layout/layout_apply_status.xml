@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_apply_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/apply_success"
+        android:layout_marginTop="@dimen/H60"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/H40"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/img_apply_status"
+        android:layout_height="wrap_content"
+        android:text="@string/apply_success_and_we_can_call_you"
+        android:textSize="16sp"
+        android:textColor="@color/c_333333"
+        android:lineSpacingExtra="@dimen/H40"
+        android:layout_marginLeft="@dimen/W72"
+        android:layout_marginBottom="@dimen/H60"
+        android:layout_marginRight="@dimen/W72">
+    </TextView>
+</RelativeLayout>

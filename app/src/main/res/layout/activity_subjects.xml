@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/c_F1F1F1">
+    <include
+        layout="@layout/title"
+        android:id="@+id/layout_title">
+    </include>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smart_subject"
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout_title"
+        android:layout_height="match_parent"
+        android:addStatesFromChildren="true"
+        app:srlHeaderTranslationViewId = "@id/recycle_subjects">
+    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/H80"
+        android:gravity="center_horizontal"
+        app:srlAccentColor="@android:color/transparent"
+        app:srlClassicsSpinnerStyle="Translate"
+        app:srlDrawableProgress="@mipmap/icon_refresh"
+        app:srlDrawableProgressSize="@dimen/H40"
+        app:srlDrawableSize="@dimen/H40"
+        app:srlEnableLastTime="false"
+        app:srlFinishDuration="500"
+        app:srlPrimaryColor="@color/c_00000000"
+        app:srlTextSizeTime="@dimen/H20"
+        app:srlTextSizeTitle="1sp" />
+
+        <com.zj.wz.wbyx.baseandroid.view.StickyScrollView
+            android:layout_width="match_parent"
+            android:layout_below="@id/layout_title"
+            android:scrollbars="none"
+            android:fillViewport="true"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_subject"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:layout_height="@dimen/H240">
+                </ImageView>
+
+                <com.zj.wz.wbyx.baseandroid.view.GoodSelectView
+                    android:id="@+id/goodSelectView"
+                    android:tag="sticky"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/H90">
+                </com.zj.wz.wbyx.baseandroid.view.GoodSelectView>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_subjects"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/W15"
+                    android:layout_marginRight="@dimen/W15">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </com.zj.wz.wbyx.baseandroid.view.StickyScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</RelativeLayout>

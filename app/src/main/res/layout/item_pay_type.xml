@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/H112">
+
+    <ImageView
+        android:id="@+id/img_payType"
+        android:layout_width="@dimen/W64"
+        android:layout_height="@dimen/H64"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/img_default"
+        android:layout_marginLeft="@dimen/W24">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="14sp"
+        android:textColor="@color/c_666666"
+        android:layout_toRightOf="@id/img_payType"
+        android:layout_marginLeft="@dimen/W60"
+        android:gravity="center_vertical">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/W24"
+        android:background="@drawable/selector_default_paytype">
+    </TextView>
+</RelativeLayout>

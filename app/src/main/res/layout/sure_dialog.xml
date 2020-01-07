@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/H250"
+    android:background="@drawable/invite_sure_bg"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_line"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/c_000000"
+            android:textSize="14sp"
+            android:drawablePadding="@dimen/H12">
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:layout_alignTop="@id/tv_sure"
+        android:background="@color/c_EBEBEB"
+        android:layout_marginBottom="@dimen/H20">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/H20"
+        android:text="@string/sure"
+        android:gravity="center"
+        android:textColor="@color/c_FF3333"
+        android:textSize="16sp"
+        android:paddingTop="@dimen/H20">
+    </TextView>
+
+</RelativeLayout>

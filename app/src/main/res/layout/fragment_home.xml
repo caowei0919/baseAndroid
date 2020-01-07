@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_EEEEEE"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/smart_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:addStatesFromChildren="true"
+            app:srlHeaderTranslationViewId = "@id/status_height">
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/H80"
+                android:gravity="center_horizontal"
+                app:srlAccentColor="@android:color/transparent"
+                app:srlClassicsSpinnerStyle="Translate"
+                app:srlDrawableProgress="@mipmap/icon_refresh"
+                app:srlDrawableProgressSize="@dimen/H40"
+                app:srlDrawableSize="@dimen/H40"
+                app:srlEnableLastTime="false"
+                app:srlFinishDuration="500"
+                app:srlPrimaryColor="@color/c_00000000"
+                app:srlTextSizeTime="@dimen/H20"
+                app:srlTextSizeTitle="1sp" />
+            <com.zj.wz.wbyx.baseandroid.view.StickyScrollView
+                android:id="@+id/newsted_home"
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:fillViewport="true"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@id/id_stickynavlayout_topview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--顶部的需要沉浸的图片View -->
+                    <com.zhouwei.mzbanner.MZBannerView
+                        android:id="@+id/banner_home_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/H440"
+                        app:canLoop="true"
+                        app:open_mz_mode="false"/>
+
+                    <!-- app:use_type="use_padding_top 向上paddingTop状态栏高度-->
+                    <com.zj.wz.wbyx.baseandroid.view.StatusBarHeightView
+                        android:id="@+id/status_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        app:use_type="use_padding_top"
+                        android:orientation="vertical" >
+
+                        <!--banner-->
+                        <com.zhouwei.mzbanner.MZBannerView
+                            android:id="@+id/banner_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/H270"
+                            android:layout_marginTop="@dimen/H100"
+                            app:open_mz_mode="true"
+                            app:canLoop="true"
+                            app:indicatorAlign="center"
+                            app:indicatorPaddingLeft="@dimen/W20"/>
+
+                        <!--分类横向滑动-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/H380"
+                            android:background="@drawable/shape_item_referees"
+                            android:paddingLeft="@dimen/W20"
+                            android:paddingTop="@dimen/H20"
+                            android:paddingRight="@dimen/W20">
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recycle_categories"
+                                android:layout_width="match_parent"
+                                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                                android:scrollbarSize="@dimen/H6"
+                                android:scrollbarStyle="outsideInset"
+                                android:scrollbarThumbHorizontal="@drawable/shape_indicator"
+                                android:scrollbarTrackHorizontal="@drawable/shape_indicator_bg"
+                                android:layout_height="wrap_content">
+                            </android.support.v7.widget.RecyclerView>
+
+                            <SeekBar
+                                android:id="@+id/slide_indicator_point"
+                                android:layout_width="@dimen/W100"
+                                android:layout_height="@dimen/H8"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:focusable="true"
+                                android:maxHeight="@dimen/H4"
+                                android:minHeight="@dimen/H4"
+                                android:progressDrawable="@drawable/shape_indicator_bg"
+                                android:thumb="@drawable/shape_indicator"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+
+                        <!--模块区，宿舍小店，窝边超市，窝边推荐-->
+                        <include layout="@layout/include_recom"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/H640"
+                            android:layout_marginLeft="@dimen/W20"
+                            android:layout_marginTop="@dimen/H20"
+                            android:layout_marginRight="@dimen/W20"/>
+
+                        <!--新品推荐-->
+                        <include layout="@layout/include_new_recommend"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/H420"
+                            android:layout_marginLeft="@dimen/W20"
+                            android:layout_marginTop="@dimen/H34"
+                            android:layout_marginRight="@dimen/W20"/>
+
+                        <!--拼团-->
+                        <include layout="@layout/include_group"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/H280"
+                            android:layout_marginTop="@dimen/H34"
+                            android:layout_marginLeft="@dimen/W20"
+                            android:layout_marginRight="@dimen/W20"/>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycle_subjects"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/H34"
+                            android:layout_marginLeft="@dimen/W20"
+                            android:layout_marginRight="@dimen/W20">
+                        </android.support.v7.widget.RecyclerView>
+
+                        <net.lucode.hackware.magicindicator.MagicIndicator
+                            android:id="@+id/magic_indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/H140"
+                            android:paddingLeft="@dimen/W20"
+                            android:paddingRight="@dimen/W20">
+                        </net.lucode.hackware.magicindicator.MagicIndicator>
+
+                        <com.zj.wz.wbyx.baseandroid.view.WrapContentHeightViewPager
+                            android:id="@+id/viewpage_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/W20"
+                            android:layout_marginRight="@dimen/W20"
+                            android:layout_marginTop="@dimen/H20">
+                        </com.zj.wz.wbyx.baseandroid.view.WrapContentHeightViewPager>
+                    </com.zj.wz.wbyx.baseandroid.view.StatusBarHeightView>
+                </RelativeLayout>
+            </com.zj.wz.wbyx.baseandroid.view.StickyScrollView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <!-- app:use_type="use_padding_top 向上paddingTop状态栏高度-->
+    <com.zj.wz.wbyx.baseandroid.view.StatusBarHeightView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        app:use_type="use_padding_top"
+        android:orientation="vertical" >
+        <include layout="@layout/home_toolbar"
+            android:id="@+id/home_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/magic_indicatorTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/H160"
+            android:layout_marginLeft="@dimen/W20"
+            android:layout_marginRight="@dimen/W20"
+            android:background="@color/c_EEEEEE"
+            android:visibility="invisible">
+        </net.lucode.hackware.magicindicator.MagicIndicator>
+    </com.zj.wz.wbyx.baseandroid.view.StatusBarHeightView>
+</RelativeLayout>

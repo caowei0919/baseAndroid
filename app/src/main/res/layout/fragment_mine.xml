@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--顶部的需要沉浸的图片View -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/mine_head_bg"
+        android:scaleType="centerCrop" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- app:use_type="use_padding_top 向上paddingTop状态栏高度-->
+        <com.zj.wz.wbyx.baseandroid.view.StatusBarHeightView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            app:use_type="use_padding_top"
+            android:orientation="vertical" >
+
+            <include layout="@layout/user_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/H54"/>
+
+            <!--vip用户-->
+            <include layout="@layout/user_or_vip"
+                android:id="@+id/view_vip"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="@dimen/H140"
+                android:layout_marginLeft="@dimen/W24"
+                android:layout_marginRight="@dimen/W24"
+                android:layout_marginTop="@dimen/H48"/>
+
+            <!--普通用户-->
+            <include layout="@layout/vip_or_user"
+                android:id="@+id/view_common"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H140"
+                android:layout_marginLeft="@dimen/W24"
+                android:layout_marginRight="@dimen/W24"
+                android:layout_marginTop="@dimen/H48"/>
+
+            <include layout="@layout/card_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/W24"
+                android:layout_marginRight="@dimen/W24"
+                android:layout_marginTop="@dimen/H20"/>
+
+            <include layout="@layout/card_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/W24"
+                android:layout_marginRight="@dimen/W24"
+                android:layout_marginTop="@dimen/H20"/>
+        </com.zj.wz.wbyx.baseandroid.view.StatusBarHeightView>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>

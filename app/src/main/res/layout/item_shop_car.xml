@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/member_common"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/checkbox_shopCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/W24"
+            android:text="@string/address_default"
+            android:textColor="@color/c_333333"
+            android:textSize="14sp"
+            android:layout_marginTop="@dimen/H30"
+            android:paddingLeft="@dimen/W24"
+            android:layout_marginBottom="@dimen/H30"
+            android:button="@drawable/selector_default_address">
+        </CheckBox>
+
+        <TextView
+            android:id="@+id/tv_shopNotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未满20元收取配送费5元"
+            android:textSize="12sp"
+            android:textColor="@color/c_666666"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/W24">
+        </TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:background="@color/c_EEEEEE">
+    </TextView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

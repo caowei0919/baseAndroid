@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_scope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scope_of_delivery"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:drawableLeft="@mipmap/icon_dormitory_addr"
+        android:drawablePadding="@dimen/W20"
+        android:layout_marginTop="@dimen/H46"
+        android:layout_marginLeft="@dimen/W60"
+        android:textColor="@color/c_1B1B1B">
+    </TextView>
+
+    <!--配送范围-->
+    <TextView
+        android:id="@+id/tv_shopScope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:maxWidth="@dimen/W400"
+        android:layout_toRightOf="@id/tv_scope"
+        android:layout_alignTop="@id/tv_scope"
+        android:layout_marginLeft="@dimen/W20">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/the_delivery_time"
+        android:layout_below="@id/tv_scope"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:drawableLeft="@mipmap/icon_dormitory_time"
+        android:drawablePadding="@dimen/W20"
+        android:layout_marginTop="@dimen/H20"
+        android:layout_marginLeft="@dimen/W60"
+        android:textColor="@color/c_1B1B1B">
+    </TextView>
+
+    <!--配送时间-->
+    <TextView
+        android:id="@+id/tv_shopTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:maxWidth="@dimen/W400"
+        android:layout_toRightOf="@id/tv_time"
+        android:layout_alignTop="@id/tv_time"
+        android:layout_marginLeft="@dimen/W20">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/service_telephone"
+        android:layout_below="@id/tv_shopTime"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:drawableLeft="@mipmap/icon_dormitory_phone"
+        android:drawablePadding="@dimen/W20"
+        android:layout_marginTop="@dimen/H20"
+        android:layout_marginLeft="@dimen/W60"
+        android:textColor="@color/c_1B1B1B">
+    </TextView>
+
+    <!--服务电话-->
+    <TextView
+        android:id="@+id/tv_shopPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:maxWidth="@dimen/W400"
+        android:layout_toRightOf="@id/tv_phone"
+        android:layout_alignTop="@id/tv_phone"
+        android:layout_marginLeft="@dimen/W20">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/the_comprehensive_score"
+        android:layout_below="@id/tv_phone"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:drawableLeft="@mipmap/icon_shop_score"
+        android:drawablePadding="@dimen/W20"
+        android:layout_marginTop="@dimen/H20"
+        android:layout_marginLeft="@dimen/W60"
+        android:textColor="@color/c_1B1B1B">
+    </TextView>
+
+    <com.zj.wz.wbyx.baseandroid.view.RatingBar
+        android:id="@+id/ratingBar_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_score"
+        android:layout_toRightOf="@id/tv_score"
+        android:layout_marginLeft="@dimen/W20"
+        android:layout_gravity="center"
+        app:selectedNumber="1.5"
+        app:starDistance="@dimen/W24"
+        app:starEmptyRes="@mipmap/ic_app_comm_star_nor"
+        app:starIsFull="false"
+        app:starSelectedRes="@mipmap/ic_app_comm_star_sel" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/the_comprehensive_info"
+        android:layout_below="@id/tv_score"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:drawableLeft="@mipmap/icon_shop_info"
+        android:drawablePadding="@dimen/W20"
+        android:layout_marginTop="@dimen/H20"
+        android:layout_marginLeft="@dimen/W60"
+        android:textColor="@color/c_1B1B1B">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_shopInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:maxWidth="@dimen/W400"
+        android:layout_toRightOf="@id/tv_info"
+        android:layout_alignTop="@id/tv_info"
+        android:layout_marginLeft="@dimen/W20">
+    </TextView>
+</RelativeLayout>

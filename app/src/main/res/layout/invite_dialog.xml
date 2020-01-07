@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/H400"
+    android:background="@drawable/invite_sure_bg"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/please_to_confirm_invite_info"
+        android:textSize="16sp"
+        android:textColor="@color/c_1B1B1B"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/H40">
+    </TextView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_avatar"
+        android:layout_width="@dimen/W100"
+        android:layout_height="@dimen/H100"
+        android:layout_below="@id/tv_title"
+        android:src="@mipmap/img_default"
+        android:layout_marginTop="@dimen/H48"
+        android:layout_marginLeft="@dimen/W80">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/tv_nickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/circle_avatar"
+        android:layout_alignTop="@id/circle_avatar"
+        android:layout_marginLeft="@dimen/W36"
+        android:layout_marginTop="@dimen/H5"
+        android:textColor="@color/c_1B1B1B"
+        android:textSize="14sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/circle_avatar"
+        android:layout_below="@id/tv_nickName"
+        android:layout_marginLeft="@dimen/W36"
+        android:layout_marginTop="@dimen/H12"
+        android:textColor="@color/c_1B1B1B"
+        android:textSize="14sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:layout_alignTop="@id/lin_select"
+        android:background="@color/c_EBEBEB">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/lin_select"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H120"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="@dimen/W1"
+            android:layout_height="match_parent"
+            android:background="@drawable/invite_cancel"
+            android:layout_marginTop="@dimen/H24"
+            android:text="@string/cancel"
+            android:gravity="center"
+            android:textColor="@color/c_FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginBottom="@dimen/H24"
+            android:layout_marginLeft="@dimen/W50"
+            android:layout_marginRight="@dimen/W50"
+            android:layout_weight="1">
+        </TextView>
+
+        <TextView
+            android:layout_width="@dimen/W2"
+            android:layout_height="match_parent"
+            android:background="@color/c_EBEBEB">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="@dimen/W1"
+            android:layout_height="match_parent"
+            android:background="@drawable/invite_sure"
+            android:layout_marginTop="@dimen/H24"
+            android:text="@string/sure"
+            android:gravity="center"
+            android:textColor="@color/c_FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginBottom="@dimen/H24"
+            android:layout_marginLeft="@dimen/W50"
+            android:layout_marginRight="@dimen/W50"
+            android:layout_weight="1">
+        </TextView>
+
+    </LinearLayout>
+</RelativeLayout>

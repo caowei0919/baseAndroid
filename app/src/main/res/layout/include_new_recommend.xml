@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_new_recommend">
+
+    <LinearLayout
+        android:id="@+id/lin_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_releases"
+            android:textColor="@color/c_FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/W20">
+        </TextView>
+
+        <TextView
+            android:layout_width="@dimen/W2"
+            android:layout_height="@dimen/H20"
+            android:background="@color/c_FFFFFF"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/W20">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_new_products_and_wait_for_your_discovery"
+            android:textColor="@color/c_FFFFFF"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/W20">
+        </TextView>
+
+        <TextView
+            android:layout_width="@dimen/W1"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_new"
+            android:layout_marginRight="@dimen/W16"
+            android:layout_marginTop="@dimen/H20"
+            android:layout_marginBottom="@dimen/H20">
+        </ImageView>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_newRecommend"
+        android:layout_below="@id/lin_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/H20"
+        android:layout_marginBottom="@dimen/H20"
+        android:layout_marginLeft="@dimen/W12"
+        android:layout_marginRight="@dimen/W12">
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

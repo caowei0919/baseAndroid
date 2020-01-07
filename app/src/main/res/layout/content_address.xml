@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_EDEDED"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@color/c_FFFFFF"
+            android:id="@+id/relative_dormitory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dormitory"
+                android:textSize="16sp"
+                android:textColor="@color/c_333333"
+                android:layout_marginLeft="@dimen/W24"
+                android:paddingTop="@dimen/H24"
+                android:paddingBottom="@dimen/H24">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cross_building_temporarily_do_not_support_delivery_text"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:textColor="@color/c_FF3333"
+                android:layout_marginRight="@dimen/W24"
+                >
+            </TextView>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/H2"
+            android:layout_below="@id/relative_dormitory"
+            android:background="@color/c_EEEEEE">
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/relative_dormitoryAddress"
+            android:layout_below="@id/relative_dormitory"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/H2"
+            android:background="@color/c_FFFFFF"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_dormitory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/H2"
+            android:layout_below="@id/relative_dormitoryAddress"
+            android:background="@color/c_EEEEEE">
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/relative_expend"
+            android:background="@color/c_FFFFFF"
+            android:layout_below="@id/relative_dormitoryAddress"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/H2"
+            android:layout_height="@dimen/H80">
+            <TextView
+                android:id="@+id/tv_onAll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:text="@string/on_all"
+                android:drawableRight="@drawable/selector_expend"
+                android:drawablePadding="@dimen/W20"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+            </TextView>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/H20"
+            android:layout_below="@id/relative_expend"
+            android:background="@color/c_EDEDED">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_other"
+            android:layout_below="@id/relative_expend"
+            android:layout_width="match_parent"
+            android:background="@color/c_FFFFFF"
+            android:layout_height="wrap_content"
+            android:text="@string/other_address"
+            android:textSize="16sp"
+            android:textColor="@color/c_333333"
+            android:paddingLeft="@dimen/W24"
+            android:layout_marginTop="@dimen/H20"
+            android:paddingTop="@dimen/H24"
+            android:paddingBottom="@dimen/H24">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/H2"
+            android:layout_below="@id/tv_other"
+            android:background="@color/c_EEEEEE">
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/relative_notDormitory"
+            android:layout_below="@id/tv_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_notDormitory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_location">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/H2"
+            android:layout_below="@id/relative_notDormitory"
+            android:background="@color/c_EEEEEE">
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/relative_otherExpend"
+            android:layout_below="@id/relative_notDormitory"
+            android:layout_width="match_parent"
+            android:background="@color/c_FFFFFF"
+            android:layout_marginTop="@dimen/H2"
+            android:layout_height="@dimen/H80">
+            <TextView
+                android:id="@+id/tv_onAllToOther"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:text="@string/on_all"
+                android:drawableRight="@drawable/selector_expend"
+                android:drawablePadding="@dimen/W20"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+            </TextView>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

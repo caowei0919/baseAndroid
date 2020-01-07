@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c_FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/title_search"/>
+    <com.enlogy.statusview.StatusRelativeLayout
+        android:id="@+id/status_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c_FFFFFF"
+        app:rContentView="@layout/content_search"
+        app:rEmptyView="@layout/empty_search"
+        app:rExtendView="@layout/extend_search">
+    </com.enlogy.statusview.StatusRelativeLayout>
+</LinearLayout>

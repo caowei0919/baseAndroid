@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/H8"
+    android:layout_marginBottom="@dimen/H4"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/img_goodsPicture"
+        android:layout_width="@dimen/W160"
+        android:layout_height="@dimen/H160"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_below="@id/img_goodsPicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/W1"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_vipPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/c_FF2525">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_nomPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_marginLeft="@dimen/W4"
+            android:textColor="@color/c_8F949C">
+        </TextView>
+
+        <TextView
+            android:layout_width="@dimen/W1"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </TextView>
+    </LinearLayout>
+</RelativeLayout>

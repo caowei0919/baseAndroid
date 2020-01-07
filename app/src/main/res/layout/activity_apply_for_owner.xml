@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+    <include layout="@layout/layout_apply_common"
+        android:id="@+id/view_to_apply"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H300"/>
+
+    <include layout="@layout/layout_apply_status"
+        android:id="@+id/view_status"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H88">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/apply_name"
+            android:layout_marginLeft="@dimen/W30"
+            android:drawableLeft="@mipmap/start_star"
+            android:drawablePadding="@dimen/W10"
+            android:textColor="@color/c_333333"
+            android:textSize="16sp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_applyName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/W30"
+            android:layout_marginRight="@dimen/W30"
+            android:textColor="@color/c_666666"
+            android:textColorHint="@color/c_999999"
+            android:hint="@string/please_to_write_name"
+            android:gravity="center_vertical|end"
+            android:background="@null"
+            android:textSize="14sp"
+            ></EditText>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:background="@color/c_EEEEEE">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H88">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/apply_phone"
+            android:layout_marginLeft="@dimen/W30"
+            android:drawableLeft="@mipmap/start_star"
+            android:drawablePadding="@dimen/W10"
+            android:textColor="@color/c_333333"
+            android:textSize="16sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_applyPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/W30"
+            android:layout_marginRight="@dimen/W30"
+            android:textColor="@color/c_666666"
+            android:textColorHint="@color/c_999999"
+            android:gravity="center"
+            android:background="@null"
+            android:textSize="14sp"
+            ></TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:background="@color/c_EEEEEE">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H88">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/apply_choose"
+            android:layout_marginLeft="@dimen/W30"
+            android:drawableLeft="@mipmap/start_star"
+            android:drawablePadding="@dimen/W10"
+            android:textColor="@color/c_333333"
+            android:textSize="16sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_chooseSchool"
+            android:layout_width="wrap_content"
+            android:minWidth="@dimen/W200"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/W30"
+            android:layout_marginRight="@dimen/W30"
+            android:textColor="@color/c_666666"
+            android:drawableRight="@mipmap/icon_right"
+            android:drawablePadding="@dimen/W20"
+            android:textColorHint="@color/c_999999"
+            android:gravity="center"
+            android:background="@null"
+            android:textSize="14sp"
+            ></TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:background="@color/c_EEEEEE">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H88">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/apply_address"
+            android:layout_marginLeft="@dimen/W30"
+            android:drawableLeft="@mipmap/start_star"
+            android:drawablePadding="@dimen/W10"
+            android:textColor="@color/c_333333"
+            android:textSize="16sp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_applyAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/W30"
+            android:layout_marginRight="@dimen/W30"
+            android:textColor="@color/c_666666"
+            android:textColorHint="@color/c_999999"
+            android:hint="@string/please_to_write_addr"
+            android:gravity="center_vertical|end"
+            android:background="@null"
+            android:textSize="14sp"
+            ></EditText>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:background="@color/c_EEEEEE">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H88">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/referees"
+            android:layout_marginLeft="@dimen/W30"
+            android:paddingLeft="@dimen/W30"
+            android:textColor="@color/c_333333"
+            android:textSize="16sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_referees"
+            android:layout_width="wrap_content"
+            android:minWidth="@dimen/W200"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/W30"
+            android:layout_marginRight="@dimen/W30"
+            android:textColor="@color/c_666666"
+            android:drawableRight="@mipmap/icon_right"
+            android:drawablePadding="@dimen/W20"
+            android:textColorHint="@color/c_999999"
+            android:gravity="center"
+            android:background="@null"
+            android:textSize="14sp">
+        </TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:background="@color/c_EEEEEE">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H1"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/W56"
+            android:layout_marginRight="@dimen/W56"
+            android:background="@drawable/btn_selecter"
+            android:textColor="@color/c_FFFFFF"
+            android:text="@string/sure"
+            android:textSize="16sp"
+            android:gravity="center">
+        </Button>
+    </RelativeLayout>
+</LinearLayout>

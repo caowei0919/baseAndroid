@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/H140"
+    android:background="@drawable/member_common">
+
+    <TextView
+        android:id="@+id/tv_vip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vip_app"
+        android:textColor="@color/c_FF4444"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/H24"
+        android:layout_marginLeft="@dimen/W48">
+    </TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_vip"
+        android:layout_below="@id/tv_vip"
+        android:layout_marginBottom="@dimen/H24"
+        android:layout_marginTop="@dimen/H36"
+        android:layout_marginLeft="@dimen/W80">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_width="@dimen/W2"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/H24"
+        android:layout_marginBottom="@dimen/H24"
+        android:background="@color/c_EE9999"
+        android:layout_toRightOf="@id/tv_vip"
+        android:layout_marginLeft="@dimen/W24">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_reducePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_line"
+        android:layout_marginLeft="@dimen/W24"
+        android:layout_alignTop="@id/tv_vip"
+        android:textSize="16sp"
+        android:textColor="@color/c_585858">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_vipLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_line"
+        android:textSize="12sp"
+        android:gravity="bottom"
+        android:layout_marginBottom="@dimen/H24"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/tv_reducePrice"
+        android:layout_marginLeft="@dimen/W24"
+        android:textColor="@color/c_FF4444">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/img_renewal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_renewal"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/W26"
+        android:layout_marginRight="@dimen/W26">
+    </ImageView>
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/H140">
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/checkbox_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/W40"
+        android:background="@drawable/selector_default_address"
+        android:button="@null">
+    </android.support.v7.widget.AppCompatCheckBox>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="@dimen/W100"
+        android:layout_height="@dimen/H100"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/checkbox_shop"
+        android:src="@mipmap/img_default"
+        android:layout_marginLeft="@dimen/W40">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="@dimen/W100"
+        android:layout_height="@dimen/H100"
+        android:layout_centerVertical="true"
+        android:text="@string/shop_close"
+        android:textColor="@color/c_FFFFFF"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@drawable/shape_shop_close"
+        android:layout_toRightOf="@id/checkbox_shop"
+        android:layout_marginLeft="@dimen/W40">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_shopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_avatar"
+        android:layout_marginLeft="@dimen/W24"
+        android:layout_alignTop="@id/img_avatar"
+        android:textSize="16sp"
+        android:textColor="@color/c_1B1B1B">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_shopNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_avatar"
+        android:layout_marginLeft="@dimen/W24"
+        android:singleLine="true"
+        android:maxWidth="@dimen/W400"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/H26"
+        android:textSize="16sp"
+        android:textColor="@color/c_1B1B1B">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:layout_toRightOf="@id/checkbox_shop"
+        android:background="@color/c_EBEBEB"
+        android:layout_marginLeft="@dimen/W40"
+        android:layout_alignParentBottom="true">
+    </TextView>
+</RelativeLayout>

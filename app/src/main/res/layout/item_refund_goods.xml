@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/check_good"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableLeft="@drawable/check_good"
+        android:drawableStart="@drawable/check_good"
+        android:padding="@dimen/W20"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/W24">
+    </CheckBox>
+
+    <ImageView
+        android:id="@+id/img_good"
+        android:layout_toRightOf="@id/check_good"
+        android:layout_width="@dimen/W112"
+        android:layout_height="@dimen/H112"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="@dimen/W24"
+        android:layout_marginTop="@dimen/H24"
+        android:layout_marginBottom="@dimen/H24">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_goodsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/W600"
+        android:maxLines="2"
+        android:layout_alignTop="@id/img_good"
+        android:layout_toRightOf="@id/img_good"
+        android:layout_marginLeft="@dimen/W20"
+        android:textSize="12sp"
+        android:textColor="@color/c_333333">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_goodsSku_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_good"
+        android:layout_marginLeft="@dimen/W20"
+        android:layout_below="@id/tv_goodsName"
+        android:layout_marginTop="@dimen/H30"
+        android:textSize="12sp"
+        android:maxLines="2"
+        android:maxWidth="@dimen/W600"
+        android:textColor="@color/c_999999">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_goodsPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/W24"
+        android:textSize="12sp"
+        android:layout_alignTop="@id/tv_goodsSku_num"
+        android:textColor="@color/c_333333">
+    </TextView>
+</RelativeLayout>

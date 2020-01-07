@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/c_FFFFFF"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_app_logo"
+        android:layout_marginTop="@dimen/H140"
+        android:layout_centerHorizontal="true">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_version"
+        android:layout_below="@id/img_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/H24"
+        android:textColor="@color/c_FF3333"
+        android:textSize="16sp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/img_update_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/version_bg"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/H140">
+    </ImageView>
+
+    <com.zj.wz.wbyx.baseandroid.view.ProgressBarView
+        android:id="@+id/progress_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:progress_text_color="@color/c_FF3333"
+        android:paddingLeft="@dimen/H4"
+        android:paddingRight="@dimen/H4"
+        android:background="@drawable/shape_update"
+        app:progress_text_size="14sp"
+        app:progress_reach_color="@color/c_FFC0C0"
+        android:layout_marginLeft="@dimen/W140"
+        android:layout_marginRight="@dimen/W140"
+        android:layout_below="@id/img_update_bg"
+        android:layout_marginTop="@dimen/H10">
+    </com.zj.wz.wbyx.baseandroid.view.ProgressBarView>
+</RelativeLayout>

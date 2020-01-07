@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/H90"
+    android:orientation="horizontal"
+    android:background="@drawable/search_sort_bg">
+
+    <TextView
+        android:id="@+id/home_mall_default"
+        android:layout_width="@dimen/W1"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/address_default"
+        android:textColor="@drawable/search_sort_txt"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/home_mall_price"
+        android:layout_width="@dimen/W1"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/home_mall_price_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/price"
+            android:textColor="@drawable/search_sort_txt"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/home_mall_price_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/W20"
+            android:background="@mipmap/icon_default" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_mall_num"
+        android:layout_width="@dimen/W1"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/home_mall_num_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/sales"
+            android:textColor="@drawable/search_sort_txt"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/home_mall_num_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/W20"
+            android:background="@mipmap/icon_default" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/home_mall_new"
+        android:layout_width="@dimen/W1"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/home_mall_new_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/new_products"
+            android:textColor="@drawable/search_sort_txt"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/home_mall_new_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/W20"
+            android:background="@mipmap/icon_default" />
+
+    </LinearLayout>
+
+</LinearLayout>

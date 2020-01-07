@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/member_common"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/W24"
+            android:text="@string/the_failure_of_goods"
+            android:textColor="@color/c_333333"
+            android:textSize="14sp"
+            android:layout_marginTop="@dimen/H30"
+            android:layout_marginBottom="@dimen/H30">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_shopNotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_indalid"
+            android:textSize="12sp"
+            android:textColor="@color/c_FF3333"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/W24">
+        </TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:background="@color/c_EEEEEE">
+    </TextView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_goodsInvalid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

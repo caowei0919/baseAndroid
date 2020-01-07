@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_FFFFFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/title"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/H128"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/img_login_bar">
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/H120">
+
+        <ImageView
+            android:id="@+id/icon_phone"
+            android:layout_width="@dimen/W48"
+            android:layout_height="@dimen/H48"
+            android:src="@mipmap/icon_phone"
+            android:layout_marginLeft="@dimen/W52">
+        </ImageView>
+
+        <com.zj.wz.wbyx.baseandroid.view.EditTextWithDel
+            android:id="@+id/et_phone"
+            android:layout_toRightOf="@id/icon_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/W24"
+            android:layout_marginRight="@dimen/W52"
+            android:background="@null"
+            android:inputType="number"
+            android:maxLength="13"
+            android:textColorHint="@color/c_CCCCCC"
+            android:textSize="12sp"
+            android:hint="@string/please_to_input_your_phone"
+            android:drawablePadding="@dimen/W24"
+            android:padding="@dimen/W10"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:background="@color/c_EEEEEE"
+        android:layout_marginLeft="@dimen/W30"
+        android:layout_marginRight="@dimen/W30">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/H28">
+
+        <ImageView
+            android:id="@+id/icon_msg"
+            android:layout_width="@dimen/W48"
+            android:layout_height="@dimen/H48"
+            android:src="@mipmap/icon_msg"
+            android:layout_marginLeft="@dimen/W52">
+        </ImageView>
+
+        <com.zj.wz.wbyx.baseandroid.view.EditTextWithDel
+            android:id="@+id/et_msgCode"
+            android:layout_toRightOf="@id/icon_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/W24"
+            android:layout_marginRight="@dimen/W52"
+            android:background="@null"
+            android:textColorHint="@color/c_CCCCCC"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textSize="12sp"
+            android:hint="@string/please_to_input_msg"
+            android:drawablePadding="@dimen/W24"
+            android:padding="@dimen/W10"/>
+
+        <TextView
+            android:id="@+id/tv_sendMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_message"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/W52"
+            android:textColor="@drawable/send_message_selecter"
+            android:textSize="12sp">
+        </TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:background="@color/c_EEEEEE"
+        android:layout_marginLeft="@dimen/W30"
+        android:layout_marginRight="@dimen/W30">
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_loginOrRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selecter"
+        android:text="@string/login_or_register"
+        android:textColor="@color/c_FFFFFF"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:enabled="false"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/W40"
+        android:layout_marginTop="@dimen/H60">
+    </Button>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/H180">
+
+        <TextView
+            android:layout_width="@dimen/W1"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/H2"
+            android:background="@color/c_EEEEEE"
+            android:layout_marginLeft="@dimen/W120"
+            android:layout_marginRight="@dimen/W60">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_for_other_type"
+            android:textColor="@color/c_999999"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal">
+        </TextView>
+
+        <TextView
+            android:layout_width="@dimen/W1"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/H2"
+            android:background="@color/c_EEEEEE"
+            android:layout_marginRight="@dimen/W120"
+            android:layout_marginLeft="@dimen/W60">
+        </TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_weChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_wechat"
+        android:padding="@dimen/W10"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/H50">
+    </ImageView>
+</LinearLayout>

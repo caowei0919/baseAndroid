@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/member_common">
+
+    <TextView
+        android:id="@+id/tv_myOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_order"
+        android:textSize="16sp"
+        android:textColor="@color/c_333333"
+        android:layout_marginLeft="@dimen/W28"
+        android:layout_marginTop="@dimen/H24">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_toCheckAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_all"
+        android:paddingTop="@dimen/H10"
+        android:paddingBottom="@dimen/H10"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_myOrder"
+        android:layout_marginRight="@dimen/W20"
+        android:drawableRight="@mipmap/img_goto"
+        android:drawablePadding="@dimen/W16">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_below="@id/tv_toCheckAll"
+        android:layout_marginTop="@dimen/H24"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H3"
+        android:background="@color/c_EBEBEB">
+    </TextView>
+
+    <LinearLayout
+        android:layout_below="@id/tv_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/payment"
+            android:drawablePadding="@dimen/H24"
+            android:layout_marginTop="@dimen/H40"
+            android:layout_marginBottom="@dimen/H30"
+            android:gravity="center"
+            android:drawableTop="@mipmap/icon_payment"
+            android:textColor="#727272"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/send_the_goods"
+            android:drawablePadding="@dimen/H24"
+            android:layout_marginTop="@dimen/H40"
+            android:layout_marginBottom="@dimen/H30"
+            android:gravity="center"
+            android:drawableTop="@mipmap/send_the_goods"
+            android:textColor="#727272"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/wait_for_receiving"
+            android:drawablePadding="@dimen/H24"
+            android:layout_marginTop="@dimen/H40"
+            android:layout_marginBottom="@dimen/H30"
+            android:gravity="center"
+            android:drawableTop="@mipmap/wait_for_receiving"
+            android:textColor="#727272"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_evaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/evaluate"
+            android:drawablePadding="@dimen/H24"
+            android:layout_marginTop="@dimen/H40"
+            android:layout_marginBottom="@dimen/H30"
+            android:gravity="center"
+            android:drawableTop="@mipmap/icon_evaluate"
+            android:textColor="#727272"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_afterSales"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/after_sales"
+            android:drawablePadding="@dimen/H24"
+            android:layout_marginTop="@dimen/H40"
+            android:layout_marginBottom="@dimen/H30"
+            android:gravity="center"
+            android:drawableTop="@mipmap/icon_after_sales"
+            android:textColor="#727272"
+            android:textSize="12sp"/>
+    </LinearLayout>
+</RelativeLayout>

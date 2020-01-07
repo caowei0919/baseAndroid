@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_goods"
+        android:layout_width="@dimen/W120"
+        android:layout_height="@dimen/H120"
+        android:src="@mipmap/img_default"
+        android:layout_marginTop="@dimen/H20"
+        android:layout_marginLeft="@dimen/W20"
+        android:layout_marginBottom="@dimen/H20">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_goods"
+        android:layout_alignTop="@id/img_goods"
+        android:layout_marginLeft="@dimen/W20"
+        android:textSize="12sp"
+        android:textColor="@color/c_333333">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_sku"
+        android:layout_width="wrap_content"
+        android:maxWidth="@dimen/W300"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_marginTop="@dimen/H20"
+        android:layout_marginBottom="@dimen/H10"
+        android:layout_toRightOf="@id/img_goods"
+        android:layout_marginLeft="@dimen/W20"
+        android:textSize="12sp"
+        android:textColor="@color/c_999999">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:layout_below="@id/img_goods"
+        android:background="@color/c_EEEEEE"
+        android:layout_alignLeft="@id/tv_title">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_sku"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/W20"
+        android:textSize="13sp"
+        android:textColor="@color/c_333333">
+    </TextView>
+</RelativeLayout>

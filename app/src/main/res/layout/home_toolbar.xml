@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/H100"
+    android:background="@color/c_00000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imgBt_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/W12"
+            android:paddingRight="@dimen/W12"
+            android:src="@mipmap/icon_service"
+            android:layout_alignParentRight="true"
+            android:button="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/W12">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_marginLeft="@dimen/W12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/in_the_location"
+            android:layout_toRightOf="@id/img_location"
+            android:layout_centerVertical="true"
+            android:textColor="@color/c_FFFFFF"
+            android:textSize="16sp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/img_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/W20"
+            android:layout_marginRight="@dimen/W12"
+            android:src="@mipmap/icon_address">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/H14"
+            android:paddingBottom="@dimen/H14"
+            android:paddingLeft="@dimen/W60"
+            android:paddingRight="@dimen/W60"
+            android:drawableLeft="@mipmap/icon_search"
+            android:drawablePadding="@dimen/W12"
+            android:layout_marginRight="@dimen/W12"
+            android:background="@drawable/shape_home_search"
+            android:text="@string/fresh_fruit"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/imgBt_service"
+            >
+        </TextView>
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

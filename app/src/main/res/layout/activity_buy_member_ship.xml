@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/c_F6F6F6"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title"
+        android:id="@+id/layout_title"/>
+
+    <TextView
+        android:id="@+id/tv_linTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:layout_below="@id/layout_title">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_buyVip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/H24"
+        android:paddingLeft="@dimen/W24"
+        android:textSize="16sp"
+        android:textColor="@color/c_333333"
+        android:layout_below="@id/tv_linTop"
+        android:background="@color/c_FFFFFF"
+        android:text="@string/select_membership_package">
+    </TextView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_memberShip"
+        android:layout_below="@id/tv_buyVip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/W24"
+        android:paddingRight="@dimen/W24"
+        android:paddingTop="@dimen/H24"
+        android:paddingBottom="@dimen/H24"
+        android:background="@color/c_FFFFFF">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H80"
+        android:gravity="center_vertical"
+        android:text="@string/pay_type"
+        android:paddingLeft="@dimen/W24"
+        android:layout_below="@id/recycle_memberShip">
+    </TextView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_payType"
+        android:layout_below="@id/recycle_memberShip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/W24"
+        android:paddingRight="@dimen/W24"
+        android:layout_marginTop="@dimen/H80"
+        android:background="@color/c_FFFFFF">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_remind"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H64"
+        android:visibility="invisible"
+        android:layout_above="@id/layout_pay"
+        android:background="@color/c_F8E8CA"
+        android:text="@string/your_membership_has_expired"
+        android:paddingLeft="@dimen/W24"
+        android:drawableLeft="@mipmap/icon_buy_vip"
+        android:drawablePadding="@dimen/W20"
+        android:gravity="center_vertical">
+    </TextView>
+
+    <include layout="@layout/layout_pay"
+        android:id="@+id/layout_pay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H100"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

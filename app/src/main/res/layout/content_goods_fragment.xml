@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_goodType"
+        android:layout_width="@dimen/W160"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/H1100"
+        android:background="@color/c_F5F5F5">
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_goods"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/recycle_goodType"
+        android:layout_height="@dimen/H1100">
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

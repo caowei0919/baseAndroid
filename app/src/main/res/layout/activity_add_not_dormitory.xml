@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/c_FFFFFF"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title"
+        android:id="@+id/layout_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H1"
+        android:layout_weight="1"
+        android:background="@color/c_FFFFFF"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zj.wz.wbyx.baseandroid.view.MarqueeTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/img_horn"
+                android:paddingLeft="@dimen/W30"
+                android:background="@color/c_F5F5F5"
+                android:paddingBottom="@dimen/H20"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:singleLine="true"
+                android:scrollHorizontally="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingTop="@dimen/H20"
+                android:textColor="@color/c_FF3333"
+                android:drawablePadding="@dimen/W20"
+                android:text="@string/cross_building_temporarily_do_not_support_delivery"
+                android:textSize="12sp">
+            </com.zj.wz.wbyx.baseandroid.view.MarqueeTextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H92"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/H1"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="@string/recipient"
+                    android:textSize="14sp"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/c_333333"
+                    android:layout_marginLeft="@dimen/W24">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/ed_name"
+                    android:layout_width="@dimen/H1"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical|left"
+                    android:background="@null"
+                    android:hint="@string/please_input_china_name"
+                    android:textColor="@color/c_333333"
+                    android:textSize="12sp"
+                    android:textColorHint="@color/c_CCCCCC"
+                    android:layout_marginRight="@dimen/W24">
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H2"
+                android:layout_marginLeft="@dimen/W24"
+                android:layout_marginRight="@dimen/W24"
+                android:background="@color/c_EEEEEE">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H92"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/H1"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="@string/dormitory_phone"
+                    android:textSize="14sp"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/c_333333"
+                    android:layout_marginLeft="@dimen/W24">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/ed_phone"
+                    android:layout_width="@dimen/H1"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical|left"
+                    android:background="@null"
+                    android:inputType="phone"
+                    android:hint="@string/please_to_input_your_phone"
+                    android:textColor="@color/c_333333"
+                    android:textSize="12sp"
+                    android:textColorHint="@color/c_CCCCCC"
+                    android:layout_marginRight="@dimen/W24">
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H2"
+                android:layout_marginLeft="@dimen/W24"
+                android:layout_marginRight="@dimen/W24"
+                android:background="@color/c_EEEEEE">
+            </TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H92"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/H1"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="@string/where_the_technology"
+                    android:textSize="14sp"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/c_333333"
+                    android:layout_marginLeft="@dimen/W24">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_area"
+                    android:layout_width="@dimen/H1"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical|left"
+                    android:inputType="phone"
+                    android:hint="@string/please_select_area_to_receive"
+                    android:drawableEnd="@mipmap/icon_right"
+                    android:textColor="@color/c_333333"
+                    android:textSize="12sp"
+                    android:textColorHint="@color/c_CCCCCC"
+                    android:layout_marginRight="@dimen/W24">
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H2"
+                android:layout_marginLeft="@dimen/W24"
+                android:layout_marginRight="@dimen/W24"
+                android:background="@color/c_EEEEEE">
+            </TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H92"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/H1"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="@string/addr_detail"
+                    android:textSize="14sp"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/c_333333"
+                    android:layout_marginLeft="@dimen/W24">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/ed_areaDetail"
+                    android:layout_width="@dimen/H1"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/please_to_input_addr_detail"
+                    android:textColor="@color/c_333333"
+                    android:textSize="12sp"
+                    android:background="@null"
+                    android:textColorHint="@color/c_CCCCCC"
+                    android:layout_marginRight="@dimen/W24">
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H2"
+                android:layout_marginLeft="@dimen/W24"
+                android:layout_marginRight="@dimen/W24"
+                android:background="@color/c_EEEEEE">
+            </TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H92"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/H1"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="@string/set_default_addr"
+                    android:textSize="14sp"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/c_333333"
+                    android:layout_marginLeft="@dimen/W24">
+                </TextView>
+
+                <com.zj.wz.wbyx.baseandroid.view.SwitchButton
+                    android:id="@+id/switch_address"
+                    android:layout_width="@dimen/W88"
+                    android:layout_height="@dimen/H44"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/W24"
+                    app:sb_background="@color/c_CCCCCC"
+                    app:sb_checked_color="@color/c_FF3333"
+                    app:sb_show_indicator="false">
+                </com.zj.wz.wbyx.baseandroid.view.SwitchButton>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/H2"
+                android:layout_marginLeft="@dimen/W24"
+                android:layout_marginRight="@dimen/W24"
+                android:background="@color/c_EEEEEE">
+            </TextView>
+
+            <Button
+                android:id="@+id/btn_complete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/H70"
+                android:layout_marginLeft="@dimen/W60"
+                android:text="@string/complete"
+                android:textSize="14sp"
+                android:textColor="@color/c_000000"
+                android:layout_marginRight="@dimen/W60"
+                android:background="@drawable/shape_add_not_dormitory">
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

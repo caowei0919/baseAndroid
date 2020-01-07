@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_item_referees">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/please_select_shop"
+        android:layout_marginTop="@dimen/H26"
+        android:layout_marginLeft="@dimen/W40"
+        android:textSize="16sp"
+        android:textColor="@color/c_1B1B1B">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_lineTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:background="@color/c_EBEBEB"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="@dimen/H26">
+    </TextView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_shop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H600"
+        android:layout_below="@id/tv_lineTop">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_lineBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H2"
+        android:background="@color/c_EBEBEB"
+        android:layout_below="@id/recycle_shop"
+        android:layout_marginBottom="@dimen/H26">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sure"
+        android:textSize="16sp"
+        android:textColor="@color/c_FFFFFF"
+        android:paddingRight="@dimen/W110"
+        android:paddingLeft="@dimen/W110"
+        android:paddingTop="@dimen/H14"
+        android:paddingBottom="@dimen/H14"
+        android:layout_below="@id/tv_lineBottom"
+        android:layout_marginBottom="@dimen/H24"
+        android:layout_marginRight="@dimen/W56"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/invite_sure">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textSize="16sp"
+        android:textColor="@color/c_FFFFFF"
+        android:paddingRight="@dimen/W110"
+        android:paddingLeft="@dimen/W110"
+        android:paddingTop="@dimen/H14"
+        android:paddingBottom="@dimen/H14"
+        android:layout_below="@id/tv_lineBottom"
+        android:layout_marginBottom="@dimen/H24"
+        android:layout_marginLeft="@dimen/W56"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/invite_cancel">
+    </TextView>
+</RelativeLayout>

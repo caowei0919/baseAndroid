@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/H140"
+    android:background="@drawable/member_common">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buy_vip_to_reduce"
+        android:textSize="16sp"
+        android:textColor="@color/c_585858"
+        android:layout_marginTop="@dimen/H24"
+        android:layout_marginLeft="@dimen/W24">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/become_us_vip_can_more_low_price"
+        android:textColor="@color/c_FF4444"
+        android:textSize="12sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/W24"
+        android:layout_marginBottom="@dimen/H24">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/img_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/W26"
+        android:src="@mipmap/icon_buy">
+    </ImageView>
+</RelativeLayout>
